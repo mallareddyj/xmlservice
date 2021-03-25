@@ -1,8 +1,6 @@
 
 #! usr/bin/python
 #
-# (c) Christoph Hallmann
-#
 # -*- coding: utf-8 -*-
 import csv, sys, os
 from lxml import etree
