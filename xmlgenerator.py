@@ -2,7 +2,7 @@ from lxml import etree
 import html
 from extractorfactory import factory
 import uuid
-
+from constants import MAX_LIMIT
 
 class XmlGenerator:
     def __init__(self):
@@ -38,9 +38,9 @@ class XmlGenerator:
         extractor = factory(ending)
         csv_data = extractor.extract_data(filename)
         self.csv_data = csv_data
-        start = 0
+        start = 1
         output_files = []
-        for i in range(30000, len(csv_data), 30000):
+        for i in range(MAX_LIMIT, len(csv_data), 30000):
             end = i
             output_file = self.__generate_xml_interval(start, end)
             output_files.append(output_file)
