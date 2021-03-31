@@ -2,3 +2,5 @@ lxml
 csv
 html
 unicodedata
+boto3~=1.17.41
+botocore~=1.20.41

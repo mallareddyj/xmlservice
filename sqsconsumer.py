@@ -1,6 +1,7 @@
 import boto3
 from botocore.exceptions import ClientError
 
+
 class SQSClient:
     """ An abstraction over the AWS SQS api, allowing for simple consumption of SQS """
 
