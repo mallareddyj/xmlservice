@@ -4,6 +4,7 @@ from extractorfactory import factory
 import uuid
 from constants import MAX_LIMIT
 
+
 class XmlGenerator:
     def __init__(self):
         self.filename = ""
